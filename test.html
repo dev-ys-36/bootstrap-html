@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>TEST HTML</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="dev-ys-36">
+        <meta name = "keywords" content="TEST HTML">
+        <meta name="description" content="TEST HTML">
+        <meta property="og:title" content="TEST HTML">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="TEST HTML">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <style>
+            .fade-in-box {
+                display: inline-block;
+                /*background: yellow;*/
+                /*padding: 10px;*/
+                animation: fadein 4s;
+                -moz-animation: fadein 4s; /* Firefox */
+                -webkit-animation: fadein 4s; /* Safari and Chrome */
+                -o-animation: fadein 4s; /* Opera */
+            }
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <style>
+            .drag{
+                -webkit-touch-callout: none;
+                user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                -webkit-user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TEST HTML</a>
+            </div>
+        </nav>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="images.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="images.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="images.png" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="padding:25px;">
+        </div>
+        <div class="container">
+            <h1 style="display:inline;">안녕하세요!</h1> <div class="fade-in-box">반가워요!</div>
+        </div>
+        <div style="padding:25px;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="images.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="images.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img class="card-img-top" src="images.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding:25px;">
+        </div>
+        <footer class="bg-dark text-md-start">
+            <div class="text-center p-3 text-white">
+                © 2022. dev-vs-36 Co. All rights reserved.
+                <a class="text-white" href="#">TEST HTML</a>
+            </div>
+        </footer>
+    </body>
+</html>
